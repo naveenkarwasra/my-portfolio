@@ -6,7 +6,7 @@
 /* custom properties */
 :root{
     --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Roboto', monospace;
+    --ff-secondary: Roboto, monospace;
     
     --fw-reg: 400;
     --fw-bold: 900;
