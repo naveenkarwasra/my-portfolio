@@ -8,3 +8,9 @@ navLinks.forEach(link => {
         document.body.classList.remove("nav-open")
     })
 })
+
+const formContainer = document.getElementById("form-container")
+const formSubmitBtn = document.getElementById("input-btn")
+formSubmitBtn.addEventListener("click", () => {
+    formContainer.textContent = "Thank you for contact. I will get back to you soon!"
+})

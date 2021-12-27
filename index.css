@@ -5,12 +5,18 @@
 }
 /* custom properties */
 :root{
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
-    
+    --ff-primary: ubuntu, sans-serif;
+    --ff-secondary: 'source sans pro', monospace;    
     --fw-reg: 400;
     --fw-bold: 900;
-    
+    --fs-h1: 2rem;
+    --fs-h2: 1.5rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+    --fs-email-logo: 2rem;
+    --fs-cv-logo: 2rem;
+    --fs-git-logo: 1.8rem;
+    --fs-skills-logo: 3rem;    
     --light: #f8f9fa;
     --dark: #343a40;
     --accent: #16e0bd;
@@ -33,18 +39,8 @@
     --success: #28a745;
     --info: #17a2b8;
     --warning: #ffc107;
-    --danger: #dc3545;
-
-    
-    --fs-h1: 2rem;
-    --fs-h2: 1.5rem;
-    --fs-h3: 1.25rem;
-    --fs-body: 1rem;
-    --fs-email-logo: 2rem;
-    --fs-cv-logo: 2rem;
-    --fs-git-logo: 1.8rem;
-    --fs-skills-logo: 3rem;
-    
+    --danger: #dc3545;  
+        
     --bs: 0 2px 4px 0 rgb(0, 0, 0, 20%);
 }
  /* General style */
@@ -53,7 +49,7 @@
         --fs-h1: 2.3rem;
         --fs-h2: 1.6rem;
         --fs-h3: 1.35rem;
-        --fs-body: 1.15rem;
+        --fs-body: 1rem;
         --fs-email-logo: 2.2rem;
         --fs-cv-logo: 1.6rem;
         --fs-git-logo: 1.9rem;
@@ -71,8 +67,8 @@
      font-size: var(--fs-body);
      font-family: var(--ff-primary);
      margin: 0;
-     
-     /*line-height: 1.6;*/
+     font-weight: 100;
+     line-height: 1.4;
      
  }
  h1 { font-size: var(--fs-h1); }
@@ -82,6 +78,8 @@
  h1, h2, h3, h4{
     margin: 0;
     font-weight: var(--fw-reg);
+    font-family: var(--ff-secondary);
+    letter-spacing: 1px;
     
      /*line-height: 1.2;*/
  }
@@ -90,7 +88,6 @@
      
      color: var(--primary);
  }
-
  .heading{
      display: flex;
      justify-content: space-between;
@@ -104,7 +101,6 @@
      left: 0;
      right: 0;
 }
-
  .nav-list{
     list-style: none;
     display: flex;
@@ -126,11 +122,9 @@
     outline: none;
     font-weight: var(--fw-bold);
 }
-
 .nav{  
     position: fixed;
-    padding: 2em 2em;
-    
+    padding: 2em 2em;    
     left: 0;
     right: 0;
     transform: translateY(-150%);
@@ -176,7 +170,6 @@
 .hamburger::after{
     bottom: 6px;
 }
-
 .nav-open .hamburger{    
     transform: rotate(60deg) translateX(-6px) translate(0px);
     top: 6px;
@@ -201,14 +194,12 @@
      margin: auto;
 }
 
-.main{
-    
+.main{    
     padding-top: 3em;
 }
 .intro-name{
      margin: 0;
-     margin-top: .7em;
-     
+     margin-top: .7em;     
      font-weight: var(--fw-reg);
  }
 .intro-title{
@@ -217,8 +208,7 @@
 .intro-btn{
      margin-top: 1em;
 }
-.intro-btn{
-    
+.intro-btn{    
     color: var(--primary);
     display: flex;   
     flex-wrap: wrap;
@@ -246,11 +236,9 @@
     outline: none;
     transform: scale(1.2);
 }
-
 .intro-btn-item + .intro-btn-item{
      margin-left: .3em;
 }
-
 .container{
     padding: 5em .5em;
 }
@@ -284,22 +272,15 @@
 .education-list{
     margin: 0 0 .5em .5em;
 }
-
-
 .institute-name{
     font-size: .8rem;
 }
-
 .skills-container{
-    background-color: var(--secondary);
-   
-    
-    text-align: center;
-    
+    background-color: var(--secondary);  
+    text-align: center;    
 }
 .skills-title{
-    font-weight: var(--fw-reg);
-    
+    font-weight: var(--fw-reg);    
 }
 .skills-item{
     margin-top: 4em;
@@ -331,45 +312,32 @@
     }
     .experience-box{
         display: flex;
-        width: 100%;
-        
+        width: 100%;        
         justify-content: space-between;
-
     }
     .experience-content{
         width: 90%;
     }
-    .experience-side-style{
-        
-        width: 5%;
-        
-        display: flex;
-        
-        flex-direction: column;
-        
+    .experience-side-style{        
+        width: 5%;        
+        display: flex;        
+        flex-direction: column;        
         justify-content: space-around;
         margin-top: 2em;
         padding: 4em 1em;
-        
-        
     }
     .bar-flex{
         display: flex;
         flex-grow: .5;
         width: 1rem;
         height: 1rem;
-        
     }
-
-    .bar-left{
-        
+    .bar-left{        
         flex-grow: .5;
         border-right: 1px solid var(--primary);
     }
     .pill{
-        background-color: var(--primary);
-        
-        
+        background-color: var(--primary);      
         border-radius: 50%;
         width: 1rem;
         height: 1rem;
@@ -378,28 +346,20 @@
         background-color: #fff;
         border: 1px solid var(--primary);
     }
-
 }
 @media(max-width: 700px){
     .experience-side-style{
         display: none;
     }
 }
-
 .projects{
     font-weight: var(--fw-reg);
 }
-.projects-img{
-    width: 70px;
-}
-.projects-item{
-    
+
+.projects-item{    
     margin-top: 3em;
-    display: flex;
-    
+    display: flex;    
     justify-content: space-between;
-    
-    
 }
 .projects-title{
     font-weight: var(--fw-reg);
@@ -409,17 +369,16 @@
     margin-bottom: .8em;
 }
 .projects-item-col1{
-    width: 65%;
+    width: 70%;
 }
 .projects-item-col2{
-    width: 35%;
+    width: 25%;
     max-height: 200px;
-    
 }
 .projects-img{
     width: 100%;
-    
-    
+    border: 1.5px solid var(--gray-light);
+    box-shadow: 0 2px 4px 0 rgb(0, 0, 0, 20%);
 }
 @media (max-width: 400px){
     .projects-item-col1{
@@ -428,12 +387,9 @@
     .projects-item-col2{
         width: 25%;
         max-height: 200px;
-        
     }
     .projects-img{
-        width: 100%;
-        max-height: 70px;
-        
+        width: 100%;      
     }
 }
 .projects-code-btn{
@@ -449,7 +405,6 @@
     outline: none;
     font-size: 1rem;
 }
-
 .experience-item{
     margin-top: 2em;
     padding: 1em;
@@ -457,7 +412,6 @@
     box-shadow: 0 2px 4px 0 rgb(0, 0, 0, 20%);
     border-radius: 5px;
 }
-
 .contact-container{
     background-color: var(--secondary);
     
@@ -477,7 +431,6 @@
     font-family: var(--ff-primary);
     outline: unset;
 }
-
 .input-btn{
     margin-top: .5em;
     border: 1px solid var(--primary);
@@ -505,7 +458,7 @@
         align-items: flex-start;
     }
     .large-screen-col-right{
-        width: 75%;
+        width: 80%;
     }
     .large-screen-col-left{
         width: 20%;
