@@ -9,6 +9,7 @@
     --ff-primary: ubuntu, sans-serif;
     --ff-secondary: 'source sans pro', monospace;    
     --fw-reg: 400;
+    --fw-med: 600;
     --fw-bold: 900;
     --fs-h1: 2rem;
     --fs-h2: 1.5rem;
@@ -78,15 +79,14 @@
 
  h1, h2, h3, h4{
     margin: 0;
-    font-weight: var(--fw-reg);
+    font-weight: var(--fw-med);
     font-family: var(--ff-secondary);
     letter-spacing: 1px;
     
      /*line-height: 1.2;*/
  }
  a{
-     text-decoration: none;
-     
+     text-decoration: none;     
      color: var(--primary);
  }
  .heading{
@@ -247,9 +247,7 @@
     text-align: center;
     padding-bottom: 2em;
 }
-.about-me-heading{    
-    font-weight: var(--fw-reg);
-}
+
 .about-me-text{
     margin-top: .5em;
 }
@@ -279,9 +277,6 @@
 .skills-container{
     background-color: var(--secondary);  
     text-align: center;    
-}
-.skills-title{
-    font-weight: var(--fw-reg);    
 }
 .skills-item{
     margin-top: 4em;
@@ -353,17 +348,10 @@
         display: none;
     }
 }
-.projects{
-    font-weight: var(--fw-reg);
-}
-
 .projects-item{    
     margin-top: 3em;
     display: flex;    
     justify-content: space-between;
-}
-.projects-title{
-    font-weight: var(--fw-reg);
 }
 .projects-description{
     margin-top: .8em;
