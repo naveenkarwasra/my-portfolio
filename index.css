@@ -15,11 +15,12 @@
     --fs-h2: 1.5rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
-    --fs-email-logo: 2rem;
-    --fs-cv-logo: .75rem;
+    --fs-email-logo: 1.83rem;
+    --fs-cv-logo: .73rem;
     --fs-git-logo: 1.8rem;
+    --fs-linkedin-logo: 1.8rem;
     --fs-skills-logo: 3rem;
-    --fs-linkedin-logo: 1.8rem;    
+       
     --light: #f8f9fa;
     --dark: #343a40;
     --accent: #16e0bd;
@@ -53,7 +54,7 @@
         --fs-h2: 1.65rem;
         --fs-h3: 1.35rem;
         --fs-body: 1.1rem;
-        --fs-email-logo: 2.2rem;
+        --fs-email-logo: 2rem;
         --fs-cv-logo: .8rem;
         --fs-git-logo: 2rem;
         --fs-linkedin-logo: 1.95rem;
@@ -455,10 +456,10 @@
         --fs-h2: 1.8rem;
         --fs-h3: 1.45rem;
         --fs-body: 1.14rem;
-        --fs-email-logo: 2.3rem;
-        --fs-cv-logo: .9rem;
-        --fs-git-logo: 2.1rem;
-        --fs-linkedin-logo: 2.1rem;
+        --fs-email-logo: 2.22rem;
+        --fs-cv-logo: .93rem;
+        --fs-git-logo: 2.2rem;
+        --fs-linkedin-logo: 2.2rem;
         --fs-skills-logo: 3.6rem;
     } 
     .large-screen-flex{
