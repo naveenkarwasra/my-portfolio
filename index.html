@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +10,8 @@
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />-->
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,900|Source+Sans+Pro:400,600,900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,600,900|Source+Sans+Pro:400,600,900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400,600,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css" />
@@ -23,13 +23,23 @@
     </style>
 
 </head>
+
 <body>
     <header class="navbar">
         <div class="heading">
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
             </button>
+           
             <h3>Naveen Kumar Karwasra</h3>
+            <div class="theme-dropdown" id="theme">
+                <a class="theme" ><i class="fas fa-palette"></i></a>
+                <div class="theme-content" id="theme-content">
+                    <a class="theme-option" id="theme-light">Light</a>
+                    <a class="theme-option" id="theme-dark">Dark</a>
+                </div>
+            </div>
+        </div>
         </div>
         <nav class="nav">
             <ul class="nav-list">
@@ -52,11 +62,13 @@
                             <h2 class="intro-name">Naveen Kumar Karwasra</h2>
                             <p class="intro-title"></p>
                             <div class="intro-btn">
-                                <a class="intro-btn-item email-logo" href="mailto:karwasranaveenkumar@gmail.com"><i class="fas fa-envelope-square"></i></a>
+                                <a class="intro-btn-item email-logo" href="mailto:karwasranaveenkumar@gmail.com"><i
+                                        class="fas fa-envelope-square"></i></a>
                                 <a class="intro-btn-item git-logo" href="https://github.com/naveenkarwasra"
                                     target="_blank"><i class="fab fa-github-square"></i>
                                 </a>
-                                <a class="intro-btn-item linkedin-logo" href="https://www.linkedin.com/in/naveen-kumar-karwasra-06331033/"
+                                <a class="intro-btn-item linkedin-logo"
+                                    href="https://www.linkedin.com/in/naveen-kumar-karwasra-06331033/"
                                     target="_blank"><i class="fab fa-linkedin"></i>
                                 </a>
                                 <a class="intro-btn-item cv-logo" href="CV_N K Karwasra.pdf" target="_blank">CV</a>
@@ -85,7 +97,7 @@
                                 Pvt. Ltd., I gained skills of management, negotiation with clients and wrap up different
                                 tasks
                                 in a single project.
-                            </p>                            
+                            </p>
                             <p>Currently I am working in Deutche Post as part time which enhances my German skills.
                                 Apart
                                 from
@@ -203,40 +215,39 @@
                         <div class="projects-item">
                             <div class="projects-item-col1">
                                 <h3 class="projects-title">Chrome Extension Dashboard</h3>
-                                <p class="projects-description">Learning project. A dashboard page renders current Bitcoin price and local weather using fetch API</p>
-                                <a class="projects-code-btn"
-                                    href="https://github.com/naveenkarwasra/Dashboard"
+                                <p class="projects-description">Learning project. A dashboard page renders current
+                                    Bitcoin price and local weather using fetch API</p>
+                                <a class="projects-code-btn" href="https://github.com/naveenkarwasra/Dashboard"
                                     target="_blank"><i class="fab fa-github-square"></i> Code</a>
                             </div>
-                            <a href="https://naveenkarwasra.github.io/Dashboard/"
-                                target="_blank" class="projects-item-col2"><img src="dasboard.png"
-                                    class="projects-img" />
+                            <a href="https://naveenkarwasra.github.io/Dashboard/" target="_blank"
+                                class="projects-item-col2"><img src="dasboard.png" class="projects-img" />
                             </a>
                         </div>
                         <div class="projects-item">
                             <div class="projects-item-col1">
                                 <h3 class="projects-title">Snake Game</h3>
-                                <p class="projects-description">Learning project. A classical single page snake game using JavaScript</p>
+                                <p class="projects-description">Learning project. A classical single page snake game
+                                    using JavaScript</p>
                                 <a class="projects-code-btn"
                                     href="https://github.com/naveenkarwasra/learning-project-snake-game"
                                     target="_blank"><i class="fab fa-github-square"></i> Code</a>
                             </div>
-                            <a href="https://naveenkarwasra.github.io/learning-project-snake-game/"
-                                target="_blank" class="projects-item-col2"><img src="snake-game-img.png"
-                                    class="projects-img" />
+                            <a href="https://naveenkarwasra.github.io/learning-project-snake-game/" target="_blank"
+                                class="projects-item-col2"><img src="snake-game-img.png" class="projects-img" />
                             </a>
                         </div>
                         <div class="projects-item">
                             <div class="projects-item-col1">
                                 <h3 class="projects-title">Pacman Game</h3>
-                                <p class="projects-description">Learning project. A classical single page pacman game using JavaScript</p>
+                                <p class="projects-description">Learning project. A classical single page pacman game
+                                    using JavaScript</p>
                                 <a class="projects-code-btn"
                                     href="https://github.com/naveenkarwasra/learning-project-pacman-game"
                                     target="_blank"><i class="fab fa-github-square"></i> Code</a>
                             </div>
-                            <a href="https://naveenkarwasra.github.io/learning-project-pacman-game/"
-                                target="_blank" class="projects-item-col2"><img src="pacman-game-img.png"
-                                    class="projects-img" />
+                            <a href="https://naveenkarwasra.github.io/learning-project-pacman-game/" target="_blank"
+                                class="projects-item-col2"><img src="pacman-game-img.png" class="projects-img" />
                             </a>
                         </div>
 
@@ -367,4 +378,3 @@
 </body>
 
 </html>
-
