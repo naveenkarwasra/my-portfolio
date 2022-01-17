@@ -447,16 +447,14 @@
     border-radius: 5px;
 }
 .contact-container{
-    background-color: var(--secondary);
-    
+    background-color: var(--secondary);    
 }
 .contact{
-    font-weight: var(--fw-reg);
+    font-weight: var(--fw-reg);    
 }
 .form-container{
     margin-top: 2em;
-    width: 100%;
-    
+    width: 100%;    
 }
 .form-input{
     width: 100%;
@@ -466,6 +464,7 @@
     font-family: var(--ff-primary);
     outline: unset;
     background-color: var(--light);
+    color: var(--dark);
 }
 .input-btn{
     margin-top: .5em;
