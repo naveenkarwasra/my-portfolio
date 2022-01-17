@@ -184,7 +184,7 @@
 }
 .hamburger{
     display: block;
-    position: relative;
+    position: relative;    
 }
 .hamburger, 
 .hamburger::before,
@@ -194,6 +194,7 @@
     height: 2px;
     border-radius: 1em;
     transition: transform 100ms ease-in-out;
+    background-color: var(--primary);
 }
 .hamburger::before,
 .hamburger::after{
@@ -201,20 +202,20 @@
     position: absolute;
     left: 0;
     right: 0;
+    
 }
 .hamburger::before{
-    top: 6px;
+    top: 6px;     
 }
 .hamburger::after{
     bottom: 6px;
 }
 .nav-open .hamburger{    
-    transform: rotate(60deg) translateX(-6px) translate(0px);
-    top: 6px;
+    transform: rotate(45deg) translateX(-6px) translate(0px);
+    top: 6px;    
  }
  .nav-open .hamburger::before{
-    transform: rotate(60deg) translateX(-6px) translate(0px);
-    left: 2px;
+    transform: rotate(90deg) translateX(-6px) translate(0px);     
 }
  .nav-open .hamburger::after{
     opacity: 0;

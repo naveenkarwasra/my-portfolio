@@ -21,16 +21,23 @@ themeToggle.addEventListener("click", () => {
     document.body.classList.toggle("theme-open")
     
 })
-const themeLight = document.getElementById("theme-light")
-const themeDark = document.getElementById("theme-dark")
+const themeLight = document.getElementById("theme-light-btn")
+const themeDark = document.getElementById("theme-dark-btn")
 let root = document.querySelector(":root")
 
+function setTheme(themeName){
+    localStorage.setItem("theme", themeName)
+    document.documentElement.className = themeName
+}
 
 themeDark.addEventListener("click", () => {
-    document.body.classList.add("dark-theme")
-    
+    setTheme("dark-theme")    
 })
 themeLight.addEventListener("click", () => {
-    document.body.classList.remove("dark-theme")
+    setTheme(" ")    
 })
-
+if(localStorage.getItem("theme") === "dark-theme"){
+    setTheme("dark-theme")
+} else{
+    setTheme(" ")
+}
